@@ -5,9 +5,10 @@
 
 
 body{
-    background-color: blue;
     font-family: Tahoma, Geneva, sans-serif;
-    color : black;
+    background: url(../img/fond.jpg) no-repeat center fixed; 
+    background-size: cover;
+    z-index: 1;
 }
 
 
@@ -78,10 +79,33 @@ header{
 /*Titre*/
 
 #contenu{
-    width: 100%;
-    margin-top: 10%;
+    z-index: 110;
+    
+}
+
+#conteneur{
+    color : white;
+    height: 100%;
+    margin-top: 8%;
+    margin-left : 10%;
+    margin-right: 10%;
     text-align: center;
     z-index: 100;
+    background-color: rgba(0,0,0,.4);
+    transition: background-color 0.8s ease;
+
+}
+
+#conteneur:hover{
+    color : black;
+    height: 100%;
+    margin-top: 8%;
+    margin-left : 10%;
+    margin-right: 10%;
+    text-align: center;
+    z-index: 100;
+    background-color: rgba(255,255,255,.9);
+    
 }
 
 

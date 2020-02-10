@@ -4,6 +4,11 @@
 }
 
 
+html {
+    min-height:100%;
+    position:relative;
+}
+
 body{
     font-family: Tahoma, Geneva, sans-serif;
     background: url(../img/fond.jpg) no-repeat center fixed; 
@@ -11,6 +16,9 @@ body{
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     z-index: 1;
     color : #d4ca00;
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 
@@ -88,6 +96,27 @@ header{
     background-color: rgba(255,255,255,.7);
     
 }
+
+
+/*Concerts*/
+.boutonConcert{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    cursor: not-allowed;
+    opacity: 0.8;
+    border-radius: 5%;
+}
+
+#boutonReserver {
+    text-align: right;
+}
+
+#concert {
+    text-align: left;
+}
+
 
 /*Biographie*/
 
@@ -187,12 +216,13 @@ button {
 footer{
     text-align: center;
     align-content: center;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom:0;
     left: 0;
     right: 0;
     width: 100%;
-    height: auto;
+    height:auto;
+    padding-top:6px;
 }
 
 .ligne{
@@ -257,4 +287,21 @@ footer{
     position : absolute;
     width: 100%;
     bottom: 0;
+}
+
+#contenu {
+    font-size:1.2em;
+}
+
+header {
+    z-index:200;
+}
+
+@media screen and (min-height: 800px) {
+    body{
+        background:black;
+    }
+    #contenu {
+        font-size:1.5em
+    }
 }

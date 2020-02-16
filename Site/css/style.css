@@ -4,11 +4,21 @@
 }
 
 
+html {
+    min-height:100%;
+    position:relative;
+}
+
 body{
     font-family: Tahoma, Geneva, sans-serif;
     background: url(../img/fond.jpg) no-repeat center fixed; 
     background-size: cover;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     z-index: 1;
+    color : #d4ca00;
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 
@@ -17,80 +27,65 @@ body{
 header{
     position : fixed;
     width: 100%;
+    background-color: #081376;
     top : 0;
     display: flex; 
-    z-index: 1000; 
 }
 
 #logo{
-    background-color: yellow;
-    width: 30%;
-    float: left;
+    width: 100%;
     display: flex;
-    
+    flex-direction: row;
 }
 
 #logo h1 {
-    align-self: center ;
-    margin-left: 10%;
-}
-
-
-.test{
-    width: 100%;
-    background-color: green;
+    margin-left: 5px;
+    margin-top : 10px;
+    float : right;
 }
 
 #mainMenu{
     position: relative;
-    background-color: white;
-    border : 1px solid black;
-    right: 5%;
-    height: 50%;
-    top: 25%;
-    float: right ;
+    width: 75%;
 }
-
 
 .menu{
     padding: 0;
-    margin: 0;
+    margin-top: 8px;
+    font-size : 0 ;
+    text-align: right;
+
 }
 
 .menu li{
     display: inline-block;
-    vertical-align: top;
-    position : relative;
+    
 }
 
 .menu a{
-    /* color: /*A définir ; */
+    color: white;
     text-decoration: none;
     display: inline-block;
     padding: 10px;
     font-size: 1.3rem;
-    /* background-color:  A définir ; */
+    
+    
 }
-.menu a:hover{
-    /* color: A définir;
-    background-color: A définir ; */
+#mainMenu a:hover{
+    color: black;
+    background-color: #d4ca00;
 }
 
 /*Titre*/
 
-#contenu{
-    z-index: 110;
-    
-}
-
 #conteneur{
     color : white;
-    height: 100%;
+    height: 80%;
     margin-top: 8%;
     margin-left : 10%;
     margin-right: 10%;
     text-align: center;
-    z-index: 100;
+    z-index: 10;
     background-color: rgba(0,0,0,.4);
     transition: background-color 0.8s ease;
 
@@ -98,17 +93,161 @@ header{
 
 #conteneur:hover{
     color : black;
-    height: 100%;
-    margin-top: 8%;
-    margin-left : 10%;
-    margin-right: 10%;
-    text-align: center;
-    z-index: 100;
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,.7);
     
 }
 
+/* Actualités*/
+#actualites h2, h3 {
+    text-align: left;
+}
 
+
+
+/*Concerts*/
+.boutonConcert{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    cursor: not-allowed;
+    opacity: 0.8;
+    border-radius: 5%;
+}
+
+#boutonReserver {
+    text-align: right;
+}
+
+#concert {
+    text-align: left;
+}
+
+#concert .boutonDispo{
+    display : flex;
+    justify-content: space-between;
+    margin : 20px;
+}
+
+/*Discographie*/
+
+#disques{
+    display : flex;
+    justify-content : center;
+    flex-wrap: wrap;
+}
+
+#disques div {
+    margin : 20px;
+}
+
+#singles{
+    text-align: left;
+}
+
+#singles p {
+    display : flex;
+    justify-content : space-between ;
+    margin: 50px;
+}
+
+#prix {
+    text-align: left;
+}
+
+
+/*Biographie*/
+
+#bigfloEtOli {
+   display : flex;
+   flex-direction: row;
+   border: 2px solid white;
+   margin: 10px;
+   padding: 10px;
+}
+
+#bigfloEtOli div {
+    margin : 20px;
+}
+
+#bigflo{
+    display : flex;
+    flex-direction: row-reverse;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+ }
+ 
+ #bigflo div {
+     margin : 20px;
+ }
+
+ #oli{
+    display : flex;
+    flex-direction: row;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+ }
+ 
+ #oli div {
+     margin : 20px;
+ }
+
+ #debut{
+    display : flex;
+    flex-direction: row-reverse;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+ }
+ 
+ #debut div {
+     margin : 20px;
+ }
+
+/*Newsletter*/
+form {
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid;
+    border-radius: 1em;
+    background-color: #b3bcc3;
+    color : black;
+}
+
+fieldset{
+    border-width: 3px;
+}
+
+legend{
+	font-family: sans-serif;
+}
+
+form div + div {
+	margin-top: 3em;
+}
+
+label {
+	display: inline-block;
+	width: 120px;
+	text-align: left;
+}
+
+#homme, #femme, #mail, #sms, #lesDeux{
+    width:50px;
+}
+
+input:focus {	
+	outline: 1px solid #000;
+}
+
+button {
+	display:block;
+    margin: 0 auto;
+    padding: 10px;
+}       
 
 /*Footer*/
 
@@ -116,30 +255,29 @@ footer{
     text-align: center;
     align-content: center;
     position: absolute;
-    bottom: 0;
+    bottom:0;
     left: 0;
     right: 0;
     width: 100%;
-    height: auto;
+    height:auto;
+    padding-top:6px;
 }
 
 .ligne{
-    background-color: #ffcb29 ;
+    background-color: #d4ca00 ;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     height: 3px;
-    color: #ffcb29;
+    color: #d4ca00;
     border-radius: 10%;
 }
 
 .info{
     position : absolute;
     width: 100%;
-    background-color: rgb(250, 131, 151);
+    background-color: #081376;
     font-weight: bold;
-    
-    
     
 }
 
@@ -159,6 +297,7 @@ footer{
     display: inline-block;
     padding: 10px;
     font-weight: bold;
+    color : black;
     
 }
 
@@ -168,7 +307,7 @@ footer{
 	position: absolute;
     top: 40%;
 	right: 5%;
-	background-color: #FCFCFC;
+	background-color: #b3bcc3;
 	border-radius: 50px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
 	transition: 0.5s;
@@ -180,10 +319,27 @@ footer{
 }
 
 .mentions{
-    background-color: #ffcb29;
+    background-color: #d4ca00;
     color : #191530;
     text-align: center;
     position : absolute;
     width: 100%;
     bottom: 0;
+}
+
+#contenu {
+    font-size:1.2em;
+}
+
+header {
+    z-index:200;
+}
+
+@media screen and (min-height: 800px) {
+    body{
+        background:black;
+    }
+    #contenu {
+        font-size:1.5em
+    }
 }

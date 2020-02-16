@@ -97,6 +97,12 @@ header{
     
 }
 
+/* Actualités*/
+#actualites h2, h3 {
+    text-align: left;
+}
+
+
 
 /*Concerts*/
 .boutonConcert{
@@ -114,6 +120,38 @@ header{
 }
 
 #concert {
+    text-align: left;
+}
+
+#concert .boutonDispo{
+    display : flex;
+    justify-content: space-between;
+    margin : 20px;
+}
+
+/*Discographie*/
+
+#disques{
+    display : flex;
+    justify-content : center;
+    flex-wrap: wrap;
+}
+
+#disques div {
+    margin : 20px;
+}
+
+#singles{
+    text-align: left;
+}
+
+#singles p {
+    display : flex;
+    justify-content : space-between ;
+    margin: 50px;
+}
+
+#prix {
     text-align: left;
 }
 

@@ -3,6 +3,7 @@
 
 ## Sommaire :
 
+* Le projet lui-même, c'est quoi?
 *  Les technologies utilisées
 *  Le choix de ces technologies
 *  Structure du site
@@ -34,6 +35,6 @@ Le site vitrine de BigFlo et Oli est composé de :
 * la page d'accueil avec les dernières nouveautés,
 * la page de biographie retraçant la vie de BigFlo et Oli,
 * la page regroupant toutes les dernières actualités,
-* la page de leur discographie avec leurs albums, leurs singles les plus écoutés ainsi que leurs récompenses
-* la page concerts rassemblant les prochaines dates de concerts par région
-* enfin la page newsletter pour donner la possibilité de s'inscrire afin de pouvoir rester informé des dernières informations
+* la page de leur discographie avec leurs albums, leurs singles les plus écoutés ainsi que leurs récompenses,
+* la page concerts rassemblant les prochaines dates de concerts par région,
+* enfin la page newsletter pour donner la possibilité de s'inscrire afin de pouvoir rester informé des dernières informations.

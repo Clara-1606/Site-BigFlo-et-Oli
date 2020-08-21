@@ -3,22 +3,27 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Site d'information sur BigFlo et Oli">
-		<meta name="author" content="Clara Vesval et Romuald Parmentier">
+		<meta name="author" content="Clara Vesval et Giovanni Ventoso">
 		<meta name="keywords" content="BigFlo, Oli, Accueil, musique, chanteur, rap, musique">
 		
 		<title> Accueil </title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 	</head> 
 
 	<body>
 
 		<header>
 			<div id="logo">
-				<h1> Bigflo et Oli </h1>
-				<nav id="mainMenu">
+				<h1> <a href="index.html">Bigflo et Oli </a> </h1>
+				<nav id="menuPrincipal">
 					<ul class="menu">
-						<li><a href="index.html">Accueil</a></li>
+						<li><a href="index.html" class="pageActuelle">Accueil</a></li>
 						<li><a href="biographie.html">Biographie</a></li>
 						<li><a href="actualite.html">Actualités</a></li>
 						<li><a href="discographie.html">Discographie</a></li>
@@ -35,15 +40,30 @@
 					<h1> Bienvenue sur le site rassemblant la vie de BigFlo et Oli ! </h1>
 					<br /><br />
 
-					<!--CAROUSSEL AVEC DES IMAGES DE BIFLO ET OLI-->
+					<div class="carousel js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay" : 2000 }'>
+						<div class="carousel-cell">
+					  		<img src="img/caroussel1.jpg" alt="Image Bigflo&Oli Carousel 1">
+					  	</div>
+					  	<div class="carousel-cell">
+					  		<img src="img/caroussel2.jpg" alt="Image Bigflo&Oli Carousel 2">
+					  	</div>
+					  	<div class="carousel-cell">
+					  		<img src="img/caroussel3.jpg" alt="Image Bigflo&Oli Carousel 3">
+					  	</div>
+					  	<div class="carousel-cell">
+					  		<img src="img/caroussel4.jpg" alt="Image Bigflo&Oli Carousel 4">
+					  	</div>
+					</div>
 			<br /><br />
 
 					<h2>Dernière vidéo : </h2>
 					<br />
-					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/thH3IU3FV8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/f_t7NOZ5wdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<br /> <br />
 					<h2>Prochains concerts : </h2>
 					<p>Aucun concerts n'est prévu pour le moment</p>
+					<br />
+					<a href="concert.html" class="bouton-concert" > Voir les concerts </a>
 
 					<br /><br />
 				</div>
@@ -69,7 +89,7 @@
 				</div>
 				<br />
 				<div class="mentions"> 
-					<small> Site sur BigFlo et Oli 2019-2020 | Réalisé par Clara Vesval et Romuald Parmentier | Tous droits réservés |  </small>
+					<small> Site sur BigFlo et Oli 2020 | Réalisé par Clara Vesval et Giovanni Ventoso | Tous droits réservés |  </small>
 				</div>
 			</div>
 		</footer>

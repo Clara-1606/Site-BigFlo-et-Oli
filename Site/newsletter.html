@@ -3,25 +3,26 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Newsletter pour recevoir toutes les informations sur BigFlo et Oli">
-		<meta name="author" content="Clara Vesval et Romuald Parmentier">
-		<meta name="keywords" content="BigFlo, Oli, Newsletter">
+		<meta name="author" content="Clara Vesval et Giovanni Ventoso">
+		<meta name="keywords" content="BigFlo, Oli, Newsletter, rap, chanteurs, musique">
 		
 		<title> Newsletter </title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/normalize.css">
 	</head> 
 	<body>
 		<header>
 			<div id="logo">
-				<h1> Bigflo et Oli </h1>
-				<nav id="mainMenu">
+				<h1> <a href="index.html">Bigflo et Oli </a> </h1>
+				<nav id="menuPrincipal">
 					<ul class="menu">
 						<li><a href="index.html">Accueil</a></li>
 						<li><a href="biographie.html">Biographie</a></li>
 						<li><a href="actualite.html">Actualités</a></li>
 						<li><a href="discographie.html">Discographie</a></li>
 						<li><a href="concert.html">Concert</a></li>
-						<li><a href="newsletter.html">Newsletter</a></li>
+						<li><a href="newsletter.html" class="pageActuelle">Newsletter</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -39,31 +40,31 @@
 						<legend>Newsletter</legend>
 						<br />
 						<div>
-						  <label for="homme">Homme</label>
-						  <input type="radio" name="genre" id="homme" value="homme" />
-			
-						  <label for="femme">Femme</label>
-						  <input type="radio" name="genre" id="femme" value="femme" checked="checked" />
+							<label for="homme">Homme</label>
+							<input type="radio" name="genre" id="homme" value="homme" />
+				
+							<label for="femme">Femme</label>
+							<input type="radio" name="genre" id="femme" value="femme" checked="checked" />
 						</div>
 						<br /><br />
 						<div>
-						  <label for="name">Prénom:</label>
-						  <input type="text" id="name" name="prénom"" placeholder="Votre prénom" required />
+							<label for="name">Prénom:</label>
+							<input type="text" id="name" name="prénom" placeholder="Votre prénom" required />
 						</div>
 						<br /><br />
 						<div>
 							<label for="name">Nom:</label>
-							<input type="text" id="name" name="nom" placeholder="Votre nom" required/>
+							<input type="text" id="name2" name="nom" placeholder="Votre nom" required/>
 						</div>
 						  <br /><br />
 						<div>
-						  <label for= "naissance"  >  Date de naissance : </label> 
+							<label for= "naissance"  >  Date de naissance : </label> 
 							<input type="text" name="anniversaire" id= "naissance" value=" jj/mm/aaaa " required>
 						<br/>
 						</div>
 						<div>
-						  <label for="mail">E-mail :</label>
-						  <input type="email" id="email" name="mail" placeholder="contact@monmail.com" required />
+							<label for="mail">E-mail :</label>
+							<input type="email" id="email" name="mail" placeholder="contact@monmail.com" required />
 						</div>
 						<br/><br />
 						<div>
@@ -82,12 +83,12 @@
 							<label for="sms">SMS</label>
 							<input type="radio" name="newsletter" id="sms" value="sms" />
 							<br />
-							<label for="lesDeux">Les deux </label>
+							<label for="lesDeux">Les deux</label>
 							<input type="radio" name="newsletter" id="lesDeux" value="lesDeux" checked="checked" />
 						</div>
 						  <br /><br />
 						<div class="button">
-						  <button type="submit">Envoyer</button>
+						  	<button type="submit">Envoyer</button>
 						</div>
 						<br /><br />
 					</fieldset>
@@ -116,7 +117,7 @@
 				</div>
 				<br />
 				<div class="mentions"> 
-					<small> Site sur BigFlo et Oli 2019-2020 | Réalisé par Clara Vesval et Romuald Parmentier | Tous droits réservés |  </small>
+					<small> Site sur BigFlo et Oli 2020 | Réalisé par Clara Vesval et Giovanni Ventoso | Tous droits réservés |  </small>
 				</div>
 			</div>
 		</footer>				
